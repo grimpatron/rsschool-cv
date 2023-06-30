@@ -36,17 +36,17 @@ function colculateStackingCount(stackMaxCount, cargoHeight, stackHeight){
 ```
 
 ##### Experience:
-I have several unfinished pet projects.
-[Exercises for English according to the program of Dmitry Petrov](https://grimpatron.github.io/EnglishPoli/index.html)
-[Customs map for the game Escape from Tarkov](https://grimpatron.github.io/tarkov-map/map.html)
+I have several unfinished pet projects.   
+[Exercises for English according to the program of Dmitry Petrov](https://grimpatron.github.io/EnglishPoli/index.html)   
+[Customs map for the game Escape from Tarkov](https://grimpatron.github.io/tarkov-map/map.html)   
 
 
 ##### Education:
-[Dmitry Lavrik chanel](https://www.youtube.com/@dmitrylavrik)
-[Glo Academy chanel](https://www.youtube.com/@Glo_Academy)
-I completed the course "IT shatle" in 2021
+[Dmitry Lavrik chanel](https://www.youtube.com/@dmitrylavrik)   
+[Glo Academy chanel](https://www.youtube.com/@Glo_Academy)   
+I completed the course "IT shatle" in 2021   
 RS Schools Course «JavaScript/Front-end» (in progress)
 
 ##### Languages:
-Russian - native speaker.
-English - Intermediate.
+Russian - native speaker.   
+English - Intermediate.   
