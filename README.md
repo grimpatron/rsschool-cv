@@ -1,1 +1,1 @@
-# https://grimpatron.github.io/rsschool-cv/cv
+# https://grimpatro.github.io/rsschool-cv/
