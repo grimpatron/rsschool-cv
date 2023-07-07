@@ -1,0 +1,10 @@
+.photo {
+  width: 200px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}

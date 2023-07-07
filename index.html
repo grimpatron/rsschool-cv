@@ -7,6 +7,74 @@
   <link rel="stylesheet" href="style.css">
   <title>rsschool-cv-html</title>
 </head>
-<body>
+
+  <div class="container">
+    <img src="image.jpg" class="photo" alt="my photo">
+  <h1>Khilman Mikhail</h1>
+  <h2>Contacts for communication:</h2>
+  <ul class="contacts-list">
+    <li class="contacts-item">
+      <p>Location: Minsk, Belarus</p>
+    </li>
+    <li class="contacts-item">
+      <a href="">Phone: +375 29 132-54-06</a>
+    </li>
+    <li class="contacts-item">
+      <a href="">E-mail: hellhammer220bpm@gmail.com</a>
+    </li>
+    <li class="contacts-item">
+      <a href="">GitHub: grimpatron</a>
+    </li>
+    <li class="contacts-item">
+      <a href="">Telegram: Mikhail Khilman</a>
+    </li>
+    <li class="contacts-item">
+      <a href="">Discord: Grim Patron</a>
+    </li>
+  </ul>
+
+  <h2>About Myself:</h2>
+  My hobby was developing games on the CryEngine 3 engine. Then I mastered 3ds Max, Photoshop, XML, ActionScript, Lua at a basic level. I liked writing scripts and got into programming. The first programming language that was consciously taught was C. After that, I decided on a further direction and began to study FrontEnd.
+
+  <h2>Skills:</h2>
+  HTML (pug)
+  CSS (less, sass)
+  JS
+  Git
+  Figma
+  Photoshop
+
+  <h2>Code Example:</h2>
+  <pre>
+    <code>
+      function colculateStackingCount(stackMaxCount, cargoHeight, stackHeight){
+        if (stackMaxCount != "") return stackMaxCount;
+        if (stackMaxCount == "") {
+          let stackHeight = Number(cargoHeight);
+          for( let counter = 0; stackHeight < stackHeight; counter++ ){
+            stackHeight += Number(cargoHeight);
+          }
+          return counter;
+        } else return 1;
+      }  
+    </code>
+  </pre>
+
+  <h2>Experience:</h2>
+  I have several unfinished pet projects.
+  Exercises for English according to the program of Dmitry Petrov
+  Customs map for the game Escape from Tarkov
+
+  <h2>Education:</h2>
+  Dmitry Lavrik chanel
+  Glo Academy chanel
+  I completed the course “IT shatle” in 2021
+  RS Schools Course «JavaScript/Front-end» (in progress)
+
+  <h2>Languages:</h2>
+  Russian - native speaker.
+  English - Intermediate.
+  </div>
+
 </body>
 </html>
