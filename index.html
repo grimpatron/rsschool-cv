@@ -7,74 +7,118 @@
   <link rel="stylesheet" href="style.css">
   <title>rsschool-cv-html</title>
 </head>
+<body>
 
-  <div class="container">
-    <img src="image.jpg" class="photo" alt="my photo">
-  <h1>Khilman Mikhail</h1>
-  <h2>Contacts for communication:</h2>
-  <ul class="contacts-list">
-    <li class="contacts-item">
-      <p>Location: Minsk, Belarus</p>
-    </li>
-    <li class="contacts-item">
-      <a href="">Phone: +375 29 132-54-06</a>
-    </li>
-    <li class="contacts-item">
-      <a href="">E-mail: hellhammer220bpm@gmail.com</a>
-    </li>
-    <li class="contacts-item">
-      <a href="">GitHub: grimpatron</a>
-    </li>
-    <li class="contacts-item">
-      <a href="">Telegram: Mikhail Khilman</a>
-    </li>
-    <li class="contacts-item">
-      <a href="">Discord: Grim Patron</a>
-    </li>
-  </ul>
+  <header class="header">
+  </header>
 
-  <h2>About Myself:</h2>
-  My hobby was developing games on the CryEngine 3 engine. Then I mastered 3ds Max, Photoshop, XML, ActionScript, Lua at a basic level. I liked writing scripts and got into programming. The first programming language that was consciously taught was C. After that, I decided on a further direction and began to study FrontEnd.
+  <main class="main">
+    <div class="main-left">
+      <div class="main-image-block">
+        <img class="main-image" src="image.jpg" class="photo" alt="my photo">
+      </div>
 
-  <h2>Skills:</h2>
-  HTML (pug)
-  CSS (less, sass)
-  JS
-  Git
-  Figma
-  Photoshop
+      <div class="main-introduce">
+        <h1><span>Mikhail</span> Khilman</h1>
+        <p class="main-profession">Front-end developer</p>
+      </div>
 
-  <h2>Code Example:</h2>
-  <pre>
-    <code>
-      function colculateStackingCount(stackMaxCount, cargoHeight, stackHeight){
-        if (stackMaxCount != "") return stackMaxCount;
-        if (stackMaxCount == "") {
-          let stackHeight = Number(cargoHeight);
-          for( let counter = 0; stackHeight < stackHeight; counter++ ){
-            stackHeight += Number(cargoHeight);
-          }
-          return counter;
-        } else return 1;
-      }  
-    </code>
-  </pre>
+      <div class="main-contacts">
+        <h2>Contacts:</h2>
+        <ul class="list contacts-list">
+          <li class="contacts-item">
+            <p>Location: Minsk, Belarus</p>
+          </li>
+          <li class="contacts-item">
+            <a href="">Phone: +375 29 132-54-06</a>
+          </li>
+          <li class="contacts-item">
+            <a href="">E-mail: hellhammer220bpm@gmail.com</a>
+          </li>
+          <li class="contacts-item">
+            <a href="">GitHub: grimpatron</a>
+          </li>
+          <li class="contacts-item">
+            <a href="">Telegram: Mikhail Khilman</a>
+          </li>
+          <li class="contacts-item">
+            <a href="">Discord: Grim Patron</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="main-myself">
+        <h2>About Myself:</h2>
+        <p class="myself-text">My hobby was developing games on the CryEngine 3 engine. Then I mastered 3ds Max, Photoshop, XML, ActionScript, Lua at a basic level.</p>
+        <p class="myself-text">I liked writing scripts and got into programming. The first programming language that was consciously taught was C. After that, I decided on a further direction and began to study FrontEnd.</p>
+      </div>
+  
+    </div>
 
-  <h2>Experience:</h2>
-  I have several unfinished pet projects.
-  Exercises for English according to the program of Dmitry Petrov
-  Customs map for the game Escape from Tarkov
+    <div class="main-right">
+      <div class="main-skills">
+        <h2>Skills:</h2>
+        <ul class="list skils-list">
+          <li class="skils-item">HTML (pug)</li>
+          <li class="skils-item">CSS (less, sass)</li>
+          <li class="skils-item">JS</li>
+          <li class="skils-item">Git</li>
+          <li class="skils-item">Figma</li>
+          <li class="skils-item">Photoshop</li>
+        </ul>
+      </div>
+      
+      <div class="main-code">
+        <h2>Code Example:</h2>
+        <pre>
+          <code>
+function colculateStackingCount(stackCount, cargoHeight, stackHeight){
+  if (stackCount != "") return stackCount;
+  if (stackCount == "") {
+    let stackHeight = Number(cargoHeight);
+    for( let counter = 0; stackHeight < stackHeight; counter++ ){
+      stackHeight += Number(cargoHeight);
+    }
+    return counter;
+  } else return 1;
+}  
+          </code>
+        </pre>
+      </div>
 
-  <h2>Education:</h2>
-  Dmitry Lavrik chanel
-  Glo Academy chanel
-  I completed the course “IT shatle” in 2021
-  RS Schools Course «JavaScript/Front-end» (in progress)
+      <div class="main-experience">
+        <h2>Experience:</h2>
+        <ul class="list experience-list">
+          <li class="list-item">I have several unfinished pet projects.</li>
+          <li class="list-item"><a href="">Exercises for English</a></li>
+          <li class="list-item"><a href="">Map for the game Escape from Tarkov</a></li>
+        </ul>
+      </div>
+      
+      <div class="main-education">
+        <h2>Education:</h2>
+        <ul class="list education-list">
+          <li class="list-item">Dmitry Lavrik chanel</li>
+          <li class="list-item">Glo Academy chanel</li>
+          <li class="list-item">I completed the course “IT shatle” in 2021</li>
+          <li class="list-item">RS Schools Course «JavaScript/Front-end» (in progress)</li>
+        </ul>        
+      </div>
 
-  <h2>Languages:</h2>
-  Russian - native speaker.
-  English - Intermediate.
-  </div>
+      <div class="main-languages">
+        <h2>Languages:</h2>
+        <ul class="list languages-list">
+          <li class="list-item">Russian - native speaker.</li>
+          <li class="list-item">English - Intermediate.</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>добавить ссылку на ваш гитхаб, год создания приложения, логотип курса со ссылкой на курс</p>
+  </footer>
 
 </body>
 </html>

@@ -1,10 +1,130 @@
-.photo {
-  width: 200px;
+:root {
+  --main-bg-color-first: #ccd;
+  --main-bg-color-second: #666;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-}
-.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 960px;
   margin: 0 auto;
+  color: #666;
+}
+.header {
+  background-color: #333;
+  height: 10px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  min-height: calc(100vh - 20px);
+}
+.main-left {
+  display: inline-block;
+  width: 40%;
+  border-right: 3px solid transparent;
+  border-image: linear-gradient(to top, white 5%, var(--main-bg-color-first) 15% 25%, var(--main-bg-color-second) 35% 45%, var(--main-bg-color-first) 55% 65% , white 75%  );
+  border-image-slice: 1;
+  padding-right: 40px;
+}
+
+
+.main-right {
+  display: inline-block;
+  width: 55%;
+}
+
+
+.main-image-block {
+  padding-top: 40px;
+  text-align: center;
+}
+.main-image {
+  width: 240px;
+  border-radius: 50%;
+}
+
+.main-introduce {
+  width: 192px;
+  margin-left: 80px;
+  padding: 20px 0;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  text-align: right;
+  color: #000;
+}
+h1 span {
+  margin-left: -12px;
+  padding: 0 36px 0 12px;
+  display: inline-block;
+  color: #fff;
+  background-color: var(--main-bg-color-first);
+  transform: translateX(36px);
+}
+.main-profession {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+/* .contacts-list {
+} */
+.contacts-item {
+  margin-top: 10px;
+}
+
+.myself-text {
+  padding: 20px 10px 0;
+}
+
+.list {
+  list-style: none;
+  padding: 10px;
+}
+.list-item {
+  margin-top: 10px;
+}
+/* .skils-list {
+  list-style: none;
+} */
+
+.main-skills {
+  padding-top: 30px;
+}
+.skils-item {
+  margin-top: 10px;
+}
+
+.footer{
+  background-color: #333;
+  padding: 10px;
+  /* height: 10px; */
+}
+
+
+h2 {
+  background-color: var(--main-bg-color-first);
+  color: #000;
+  padding: 2px 10px;
 }
