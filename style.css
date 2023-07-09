@@ -1,4 +1,5 @@
 :root {
+  --main-color: sienna;
   --main-bg-color-first: #ccd;
   --main-bg-color-second: #889;
 }
@@ -15,57 +16,9 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-width: 960px;
   margin: 0 auto;
   color: #666;
-}
-
-.header {
-  background-color: #333;
-  padding: 5px;
-}
-.nav-list {
-  width: max-content;
-  margin: 0 auto;
-  list-style: none;
-}
-.nav-item {
-  display: inline-block;
-  margin: 0 5px;
-}
-.nav-link {
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.nav-link:hover {
-  color: sienna;
-  transition: 0.2s;
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-  min-height: calc(100vh - 20px);
-}
-
-.main-left {
-  display: inline-block;
-  width: 45%;
-  border-right: 3px solid transparent;
-  border-image: linear-gradient(to top, white 5%, var(--main-bg-color-first) 15% 25%, var(--main-bg-color-second) 35% 45%, var(--main-bg-color-first) 55% 65% , white 75%  );
-  border-image-slice: 1;
-  padding-right: 32px;
-}
-
-.main-right {
-  display: inline-block;
-  width: 52%;
 }
 
 .list {
@@ -85,6 +38,55 @@ body {
 
 .section-header--alt {
   background-color: var(--main-bg-color-second);
+}
+
+/* HEADER */
+.header {
+  background-color: #333;
+  padding: 5px;
+}
+
+.nav-list {
+  width: max-content;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+  transition: 0.2s;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left {
+  display: inline-block;
+  width: 45%;
+  border-right: 3px solid transparent;
+  border-image: linear-gradient(to top, white 5%, var(--main-bg-color-first) 15% 25%, var(--main-bg-color-second) 35% 45%, var(--main-bg-color-first) 55% 65% , white 75%  );
+  border-image-slice: 1;
+  padding-right: 32px;
+}
+
+.main-right {
+  display: inline-block;
+  width: 52%;
 }
 
 /* MAIN IMAGE */
@@ -146,7 +148,7 @@ h1 span {
 
 .contacts-name {
   font-size: 18px;
-  color: sienna;
+  color: var(--main-color);
 }
 
 .contacts-link:hover {
@@ -186,7 +188,7 @@ h1 span {
 /* EXPIRIENCE */
 .experience-link {
   font-size: 18px;
-  color: sienna;
+  color: var(--main-color);
   padding: 5px;
   width: 100%;
   display: block;
@@ -211,7 +213,7 @@ h1 span {
 }
 
 .footer-name:hover {
-  color: sienna;
+  color: var(--main-color);
   transition: 0.2s;
 }
 
