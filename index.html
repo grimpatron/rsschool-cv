@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,41 @@
   <link rel="stylesheet" href="style.css">
   <title>rsschool-cv-html</title>
 </head>
+
 <body>
 
   <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Myself</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Code Example</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Languages</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="main">
     <div class="main-left">
       <div class="main-image-block">
-        <img class="main-image" src="image.jpg" class="photo" alt="my photo">
+        <img class="main-image" src="image.jpg" alt="my photo">
       </div>
 
       <div class="main-introduce">
@@ -24,89 +51,218 @@
       </div>
 
       <div class="main-contacts">
-        <h2>Contacts:</h2>
+        <h2 class="section-header">Contacts</h2>
         <ul class="list contacts-list">
           <li class="contacts-item">
-            <p>Location: Minsk, Belarus</p>
+            <a class="contacts-link contacts-link--disabled" href="tel:">
+              <img class="contacts-icon" src="/icons/icon-location.png" alt="html icon">
+              <span class="contacts-name">Location: Minsk, Belarus</span>
+            </a>
           </li>
           <li class="contacts-item">
-            <a href="">Phone: +375 29 132-54-06</a>
+            <a class="contacts-link" href="tel:+375291325406">
+              <img class="contacts-icon" src="/icons/icon-phone.png" alt="html icon">
+              <span class="contacts-name">+375 29 132-54-06</span>
+            </a>
           </li>
           <li class="contacts-item">
-            <a href="">E-mail: hellhammer220bpm@gmail.com</a>
+            <a class="contacts-link" href="hellhammer220bpm@gmail.com">
+              <img class="contacts-icon" src="/icons/icon-gmail.png" alt="html icon">
+              <span class="contacts-name">hellhammer220bpm@gmail.com</span>
+            </a>
           </li>
           <li class="contacts-item">
-            <a href="">GitHub: grimpatron</a>
+            <a class="contacts-link" href="https://github.com/grimpatron">
+              <img class="contacts-icon" src="/icons/icon-github.png" alt="html icon">
+              <span class="contacts-name">grimpatron</span>
+            </a>
           </li>
           <li class="contacts-item">
-            <a href="">Telegram: Mikhail Khilman</a>
+            <a class="contacts-link" href="https://t.me/MikhailKhilman">
+              <img class="contacts-icon" src="/icons/icon-telegram.png" alt="html icon">
+              <span class="contacts-name">Mikhail Khilman</span>
+            </a>
           </li>
           <li class="contacts-item">
-            <a href="">Discord: Grim Patron</a>
+            <a class="contacts-link" href="https://discordapp.com/users/432476671317245956/">
+              <img class="contacts-icon" src="/icons/icon-discord.png" alt="html icon">
+              <span class="contacts-name">Grim Patron</span>
+            </a>
           </li>
         </ul>
       </div>
-      
+
       <div class="main-myself">
-        <h2>About Myself:</h2>
+        <h2 class="section-header section-header--alt">About Myself</h2>
         <p class="myself-text">My hobby was developing games on the CryEngine 3 engine. Then I mastered 3ds Max, Photoshop, XML, ActionScript, Lua at a basic level.</p>
         <p class="myself-text">I liked writing scripts and got into programming. The first programming language that was consciously taught was C. After that, I decided on a further direction and began to study FrontEnd.</p>
       </div>
-  
+
     </div>
 
     <div class="main-right">
       <div class="main-skills">
-        <h2>Skills:</h2>
-        <ul class="list skils-list">
-          <li class="skils-item">HTML (pug)</li>
-          <li class="skils-item">CSS (less, sass)</li>
-          <li class="skils-item">JS</li>
-          <li class="skils-item">Git</li>
-          <li class="skils-item">Figma</li>
-          <li class="skils-item">Photoshop</li>
+        <h2 class="section-header">Skills</h2>
+        <ul class="list skills-list">
+          <li class="skills-item"><img class="skills-icon" src="/icons/icon-html.png" alt="html icon">
+            <span class="skills-name">HTML (pug)</span>
+          </li>
+          <li class="skills-item">
+            <img class="skills-icon" src="/icons/icon-css.png" alt="css icon">
+            <span class="skills-name">CSS (less, sass)</span>
+          </li>
+          <li class="skills-item">
+            <img class="skills-icon" src="/icons/icon-js.png" alt="javascript icon">
+            <span class="skills-name">JS</span>
+          </li>
+          <li class="skills-item">
+            <img class="skills-icon" src="/icons/icon-git.png" alt="git icon">
+            <span class="skills-name">Git</span>
+          </li>
+          <li class="skills-item">
+            <img class="skills-icon" src="/icons/icon-figma.png" alt="figma icon">
+            <span class="skills-name">Figma</span>
+          </li>
+          <li class="skills-item">
+            <img class="skills-icon" src="/icons/icon-adobe-photoshop.png" alt="photoshop icon">
+            <span class="skills-name">Photoshop</span>
+          </li>
         </ul>
       </div>
-      
+
       <div class="main-code">
-        <h2>Code Example:</h2>
-        <pre>
-          <code>
-function colculateStackingCount(stackCount, cargoHeight, stackHeight){
-  if (stackCount != "") return stackCount;
-  if (stackCount == "") {
-    let stackHeight = Number(cargoHeight);
-    for( let counter = 0; stackHeight < stackHeight; counter++ ){
-      stackHeight += Number(cargoHeight);
-    }
-    return counter;
-  } else return 1;
-}  
-          </code>
-        </pre>
+        <h2 class="section-header section-header--alt">Code Example</h2>
+        <div class=code-example>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#569CD6'>function</span><span lang=EN-US
+          style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#DCDCAA'>stackingCount</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>(</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackCount</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>, </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>cargoHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>, </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>){</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; </span><span lang=EN-US
+          style='font-size:10.5pt;font-family:Consolas;color:#C586C0'>if</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> (</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackCount</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> != </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#CE9178'>&quot;&quot;</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>) </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#C586C0'>return</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackCount</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>;</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; </span><span lang=EN-US
+          style='font-size:10.5pt;font-family:Consolas;color:#C586C0'>if</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> (</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackCount</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> == </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#CE9178'>&quot;&quot;</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>) {</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; &nbsp; </span><span lang=EN-US
+          style='font-size:10.5pt;font-family:Consolas;color:#569CD6'>let</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> = </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#4EC9B0'>Number</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>(</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>cargoHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>);</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; &nbsp; </span><span lang=EN-US
+          style='font-size:10.5pt;font-family:Consolas;color:#569CD6'>let</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>counter</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> = </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#B5CEA8'>0</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>;</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; &nbsp; </span><span lang=EN-US
+          style='font-size:10.5pt;font-family:Consolas;color:#C586C0'>for</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>( ; </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> &lt; </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>; </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>counter</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>++ ){</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; &nbsp; &nbsp; </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>stackHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'> += </span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#4EC9B0'>Number</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>(</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#9CDCFE'>cargoHeight</span><span
+          lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>);</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;
+          font-family:Consolas;color:#D4D4D4'>&nbsp; &nbsp; </span><span
+          style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>}</span></p>
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'>&nbsp; &nbsp; </span><span style='font-size:10.5pt;font-family:
+          Consolas;color:#C586C0'>return</span><span style='font-size:10.5pt;font-family:
+          Consolas;color:#D4D4D4'> </span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#9CDCFE'>counter</span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'>;</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'>&nbsp; } </span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#C586C0'>else</span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'> </span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#C586C0'>return</span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'> </span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#B5CEA8'>1</span><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'>;</span></p>
+          
+          <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+          14.25pt;background:#1E1E1E'><span style='font-size:10.5pt;font-family:Consolas;
+          color:#D4D4D4'>}</span></p>
+        </div>
       </div>
 
       <div class="main-experience">
-        <h2>Experience:</h2>
+        <h2 class="section-header">Experience</h2>
         <ul class="list experience-list">
           <li class="list-item">I have several unfinished pet projects.</li>
-          <li class="list-item"><a href="">Exercises for English</a></li>
-          <li class="list-item"><a href="">Map for the game Escape from Tarkov</a></li>
+          <li class="experience-item"><a class="experience-link" href="https://grimpatron.github.io/EnglishPoli/index.html">Exercises for English</a></li>
+          <li class="experience-item"><a class="experience-link" href="https://grimpatron.github.io/tarkov-map/map.html">Map for the game Escape from Tarkov</a></li>
         </ul>
       </div>
-      
+
       <div class="main-education">
-        <h2>Education:</h2>
+        <h2 class="section-header section-header--alt">Education</h2>
         <ul class="list education-list">
-          <li class="list-item">Dmitry Lavrik chanel</li>
-          <li class="list-item">Glo Academy chanel</li>
-          <li class="list-item">I completed the course “IT shatle” in 2021</li>
-          <li class="list-item">RS Schools Course «JavaScript/Front-end» (in progress)</li>
-        </ul>        
+          <li class="list-item"><strong>Dmitry Lavrik</strong> YouTube chanel</li>
+          <li class="list-item"><strong>Glo Academy</strong> YouTube chanel</li>
+          <li class="list-item">I completed the course <strong>“IT shatle”</strong> in 2021</li>
+          <li class="list-item"><strong>RS Schools</strong> Course «JavaScript/Front-end» <i>(in progress)</i></li>
+        </ul>
       </div>
 
       <div class="main-languages">
-        <h2>Languages:</h2>
+        <h2 class="section-header">Languages</h2>
         <ul class="list languages-list">
           <li class="list-item">Russian - native speaker.</li>
           <li class="list-item">English - Intermediate.</li>
@@ -117,8 +273,17 @@ function colculateStackingCount(stackCount, cargoHeight, stackHeight){
   </main>
 
   <footer class="footer">
-    <p>добавить ссылку на ваш гитхаб, год создания приложения, логотип курса со ссылкой на курс</p>
+    <a class="footer-link" href="https://github.com/grimpatron">
+      <img class="footer-image" src="/icons/icon-github-white.jpg" alt="github icon">
+      <span class="footer-name">My GitHub</span>
+    </a>
+    <a class="footer-link" href="https://rs.school/js/">
+      <img class="footer-image" src="/icons/logo_rs.svg" alt="The Rolling Scopes School icon">
+      <span class="footer-name">The Rolling Scopes School</span>
+    </a>
+    <span class="footer-info">created in 2023</span>
   </footer>
 
 </body>
+
 </html>
