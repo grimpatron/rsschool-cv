@@ -1,0 +1,258 @@
+:root {
+  --main-color: sienna;
+  --main-bg-color-first: #ccd;
+  --main-bg-color-second: #889;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.list {
+  list-style: none;
+  padding: 20px;
+}
+
+.list-item {
+  margin-bottom: 10px;
+}
+
+.section-header {
+  background-color: var(--main-bg-color-first);
+  color: #111;
+  padding: 4px 10px;
+}
+
+.section-header--alt {
+  background-color: var(--main-bg-color-second);
+}
+
+/* HEADER */
+.header {
+  background-color: #333;
+  padding: 5px;
+}
+
+.nav-list {
+  width: max-content;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+  transition: 0.2s;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left {
+  display: inline-block;
+  width: 45%;
+  border-right: 3px solid transparent;
+  border-image: linear-gradient(to top, white 5%, var(--main-bg-color-first) 15% 25%, var(--main-bg-color-second) 35% 45%, var(--main-bg-color-first) 55% 65% , white 75%  );
+  border-image-slice: 1;
+  padding-right: 32px;
+}
+
+.main-right {
+  display: inline-block;
+  width: 52%;
+}
+
+/* MAIN IMAGE */
+.main-image-block {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.main-image {
+  width: 240px;
+  border-radius: 50%;
+}
+
+/* MAIN INTRODUCE */
+.main-introduce {
+  width: 192px;
+  margin-left: 80px;
+  padding: 20px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  text-align: right;
+  color: #000;
+}
+
+h1 span {
+  margin-left: -12px;
+  padding: 0 36px 0 12px;
+  display: inline-block;
+  color: #fff;
+  background-color: var(--main-bg-color-first);
+  transform: translateX(36px);
+}
+
+.main-profession {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* CONTACTS */
+.contacts-link {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.contacts-link--disabled {
+  pointer-events: none;
+}
+
+.contacts-icon{
+  width: 24px;
+  margin-right: 10px;
+}
+
+.contacts-name {
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.contacts-link:hover {
+  transition: 0.2s;
+  background-color: var(--main-bg-color-first);
+}
+
+/* MYSELF */
+.myself-text {
+  padding: 20px 10px 0;
+}
+
+/* SKILLS */
+.main-skills {
+  padding-top: 30px;
+}
+
+.skills-list {
+  column-count: 2;
+}
+
+.skills-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-name {
+  font-size: 20px;
+}
+
+.skills-icon {
+  width: 42px;
+  margin-right: 10px;
+}
+
+/* EXPIRIENCE */
+.experience-link {
+  font-size: 18px;
+  color: var(--main-color);
+  padding: 5px;
+  width: 100%;
+  display: block;
+}
+.experience-link:hover {
+  transition: 0.2s;
+  background-color: var(--main-bg-color-first);
+}
+
+.footer{
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer-name:hover {
+  color: var(--main-color);
+  transition: 0.2s;
+}
+
+.footer-image {
+  height: 48px;
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.footer-name,
+.footer-info {
+  color: white;
+  font-size: 18px;
+}
+
+/* CODE EXAMPLE */
+.code-example {
+  font-size: 0;
+  margin: 10px 0 20px;
+  border: 10px solid #000;
+}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
