@@ -12,3 +12,25 @@
 At school I took electives in Pascal. It was hard and at the same time interesting. After school I tried to create games on CryEngine.
 The first programming language that I consciously began to learn was C. I created several simple programs on it, after which I completely switched to learning JavaScript and creating websites.
 After start studying the frontend, I finally made my choice. I like create websites. I want to change my field of activity and do what I love.
+
+## My skills:
+* Markdown
+* HTML (bootstrap, pug)
+* CSS (less, sass)
+* JavaScript, Typescript
+* Git, GitHub
+* Figma, Adobe Photoshop
+
+## Code Example:
+```
+function group(array, keySelector, valueSelector) {
+  return array.reduce((map, item) => {
+    const keyS = keySelector(item);
+    const valueS = valueSelector(item);
+    if (!map.has(keyS)) map.set(keyS, []);
+    map.get(keyS).push(valueS);
+    return map;
+  }, new Map());
+}
+```
+
